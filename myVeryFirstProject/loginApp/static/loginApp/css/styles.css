@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #7CBB5B;
+}
+
+.container {
+    width: 700px;
+    height: 920px;
+    position: relative;
+    left: 750px;
+    top: 20px;
+    background-color: #2D2D2D;
+    box-shadow: 10px 0px 25px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    font-family: 'Roboto', sans-serif;
+    color: #D0D0D0;
+    margin-top: 5px;
+    padding: 30px;
+}
+
+.form h1 {
+    margin-top: 0px;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.input {
+
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    font-weight: bold;
+    border: none;
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #F2F2F2;
+}
+
+.input:hover {
+    color: #D0D0D0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 5px solid #4CB051;
+}
+
+
+
+.input:active {
+    color: #D0D0D0;
+    border-left: 5px solid #4CB051;
+}
+
+.button {
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    transition: 1s ease-in-out;
+    margin-top: 0px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #4CB051;
+    position: absolute;
+    left: 220px;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    background: #D0D0D0;
+}
+
+svg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+
+.button:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.button span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.center {
+    width: 180px;
+    height: 50px;
+    position: absolute;
+}

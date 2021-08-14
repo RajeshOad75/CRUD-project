@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'loginApp/css/styles.css' %}">
+    <title>Login Application</title>
+
+</head>
+<body>
+
+    <div class="container">
+
+
+        <form action="" class="form" method="POST">
+        {% csrf_token %}
+                      
+            <h1>Registration Form</h1>
+
+             
+            <input id="firstname"class="input" type="text" name="firstname" autocomplete="off" placeholder="Name"/>
+            <input id="address" class="input" type="text" name="address" autocomplete="off" placeholder="Address"/>
+
+            <br>
+            <input id="emailAddress" class="input" type="text" name="emailAddress" autocomplete="off" placeholder="Email address"/>
+            
+            <br>
+            <input id="phoneNumber" name="phoneNumber" class="input" type="number" maxlength="11" autocomplete="off" placeholder="Telephone number"/>
+            
+            <br>
+            <input id="gender" name="gender" class="input" type="text" maxlength="11" autocomplete="off" placeholder="Gender"/>
+            <br>
+            <input id="remarks" name="remarks" class="input" type="text" maxlength="11" autocomplete="off" placeholder="Remarks"/>
+
+            <input name="image" class="input" type="file" placeholder="Import your image here">
+
+
+
+            <br>
+            <br>
+            <br>
+            
+            <div class="">
+                     <input type="submit" class="button" style="position: absolute; left: 120px; bottom: 120px; text-decoration: none;" value="Insert"/>
+                     <a href="{% url 'update' %}" class="button" style="position: absolute; left: 370px; bottom: 120px; text-decoration: none;">Update</a>
+                     <a href="{% url 'delete' %}" class="button" style="position: absolute; left: 120px; bottom: 50px; text-decoration: none;">Delete</a>
+                     <a href="{% url 'show' %}" class="button" style="position: absolute; left: 370px; bottom: 50px; text-decoration: none;">Show</a>
+                     
+            </div>
+            
+            
+        </form>
+
+    </div>
+
+    <script src="{% static 'loginApp/js/scripts.js' %}"></script>
+</body>
+</html>

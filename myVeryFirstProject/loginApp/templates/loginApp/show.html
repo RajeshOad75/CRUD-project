@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'loginApp/css/styles.css' %}">
+    <title>Login Application</title>
+
+</head>
+<body>
+       <div class="" style="color: white;">
+            <p>The list of authorized users</p>            
+            <table class="table table-bordered form" style="color: white;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Remarks</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ali</td>
+                    <td>Bhittai Nagar Qasimabad Hyderabad</td>
+                    <td>aliahmed1@gmail.com</td>
+                    <td>01123344556</td>
+                    <td>Male</td>
+                    <td>Very Good</td>
+                </tr>
+                <tr>
+                    <td>Rohan</td>
+                    <td>Flat No.23 Qasimabad Hyderabad</td>
+                    <td>rohanoad23@outlook.com</td>
+                    <td>0336363633025</td>
+                    <td>Male</td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                    <td>Anisha</td>
+                    <td>House #12 Defence Karachi</td>
+                    <td>aliahmed1@gmail.com</td>
+                    <td>111102211111</td>
+                    <td>Female</td>
+                    <td>Best</td>
+                </tr>
+                </tbody>
+            </table>
+                        
+            
+            <br>
+            <br>
+            
+            <div class="">
+                     <a href="{% url 'index' %}" class="button" style="position: absolute; left: 370px; bottom: 50px; text-decoration: none;">Back</a>
+            </div>
+       
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'loginApp/js/scripts.js' %}"></script>
+</body>
+</html>

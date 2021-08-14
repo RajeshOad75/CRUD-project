@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'loginApp/css/styles.css' %}">
+    <title>Login Application</title>
+
+</head>
+<body>
+       <div class="container">
+
+
+        <form action="displayContent.html" class="form" method="POST">
+
+            <h1>Delete your personal information</h1>
+
+             
+            <input id="firstname"class="input" type="text" name="firstname" autocomplete="off" placeholder="Name"/>
+            <input id="address" class="input" type="text" name="address" autocomplete="off" placeholder="Address"/>
+
+            <br>
+            <input id="emailAddress" class="input" type="text" name="emailAddress" autocomplete="off" placeholder="Email address"/>
+            
+            <br>
+            <input id="phoneNumber" name="phoneNumber" class="input" type="number" maxlength="11" autocomplete="off" placeholder="Telephone number"/>
+            
+            <br>
+            <input id="gender" name="Gender" class="input" type="text" maxlength="11" autocomplete="off" placeholder="Gender"/>
+            <br>
+            <input id="remarks" name="Remarks" class="input" type="text" maxlength="11" autocomplete="off" placeholder="Remarks"/>
+            
+            <br>
+            <input name="image" class="input" type="file" placeholder="Import your image here">
+
+            <br>
+
+            
+            <br>
+            <br>
+            
+            <div class="">
+                     <button class="button" style="position: absolute; left: 120px; bottom: 120px;">Delete</button>
+                     <a href="{% url 'index' %}" class="button" style="position: absolute; left: 370px; bottom: 50px; text-decoration: none;">Back</a>
+                     
+            </div>
+            
+            
+        </form>
+
+    </div>
+
+    <script src="{% static 'loginApp/js/scripts.js' %}"></script>
+</body>
+</html>
